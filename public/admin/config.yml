@@ -16,7 +16,7 @@ collections:
     label: "Equipo"
     folder: "src/data/equipo"
     create: true
-    slug: "{{slug}}"
+    slug: "{{nombre}}-{{primer_apellido}}"
     summary: "{{nombre}} {{primer_apellido}} - {{cargo}}"
     format: "json"
     i18n: true
