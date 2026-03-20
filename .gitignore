@@ -139,5 +139,5 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # Permitir subida de imágenes de equipo y CMS
-!src/assets/uploads/
-!src/assets/uploads/*
+!src/assets/fotos-equipo/
+!src/assets/fotos-equipo/*

@@ -1,16 +1,16 @@
 {
-  "foto_desktop": "/src/assets/uploads/maría-izcúe-desktop-equipo-omz-abogados.jpg",
+  "foto_desktop": "/src/assets/fotos-equipo/maría-izcúe-desktop-equipo-omz-abogados.jpg",
   "segundo_apellido": "Gana",
   "bio": "María ha centrado su práctica en la asesoría de clientes locales e internacionales en materia de financiamiento de proyectos, transacciones de infraestructura, fusiones y adquisiciones, y asesoría corporativa en general.",
   "nombre": "María",
   "primer_apellido": "Izcúe",
   "idiomas_hablados": "Español e Inglés",
   "areas_practica": "Corporativo, Financiamiento y Proyectos de Infraestructura.",
-  "foto_thumbnail": "/src/assets/uploads/maría-izcúe-thumbnail-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/src/assets/fotos-equipo/maría-izcúe-thumbnail-equipo-omz-abogados.jpg",
   "mail": "maria@omzabogados.cl",
   "experiencia_previa": "Barros & Errázuriz Abogados (2023-2026)\nProcuradora Porzio, Ríos & García (2021)",
   "educacion": "Pontificia Universidad Católica de Chile, Licenciada en Derecho (2022).",
   "cargo": "Asociada",
-  "foto_mobile": "/src/assets/uploads/maría-izcúe-mobile-equipo-omz-abogados.jpg",
+  "foto_mobile": "/src/assets/fotos-equipo/maría-izcúe-mobile-equipo-omz-abogados.jpg",
   "linkedin": "https://www.linkedin.com/in/mar%C3%ADa-izcue-gana-b88141258/"
 }

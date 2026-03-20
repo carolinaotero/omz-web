@@ -1,17 +1,17 @@
 {
-  "foto_desktop": "/src/assets/uploads/ricardo-celedón-desktop-equipo-omz-abogados.jpg",
+  "foto_desktop": "/src/assets/fotos-equipo/ricardo-celedón-desktop-equipo-omz-abogados.jpg",
   "segundo_apellido": "Otero",
   "bio": "Ricardo focuses his practice on corporate law, complex transactions, technology, and infrastructure. His specialization in law and technology has positioned him as a recurring advisor to startups, venture capital funds, and companies that develop solutions based on artificial intelligence.\n\nWith more than a decade of experience, Ricardo has participated in mergers and acquisitions, financing rounds, joint venture structuring, and technology contracting. Likewise, he has accompanied his clients in obtaining administrative permits and in negotiating contracts linked to public works and infrastructure projects.",
   "nombre": "Ricardo",
   "primer_apellido": "Celedón",
   "idiomas_hablados": "Spanish and English.",
   "areas_practica": "Corporate, M&A, technology, venture capital, infrastructure and projects, and administrative law.",
-  "foto_thumbnail": "/src/assets/uploads/ricardo-celedón-thumbnail-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/src/assets/fotos-equipo/ricardo-celedón-thumbnail-equipo-omz-abogados.jpg",
   "afiliaciones": "Chilean Bar Association",
   "mail": "ricardo@omzabogados.cl",
   "experiencia_previa": "Echeverría Ilharreborde Scagliotti (2021-2024)\nCMS Carey & Allende (2014-2021)",
   "educacion": "University of California, Berkeley, Master of Laws (LL.M.) with Certificate in Law and Technology (2020). Chile CONICYT Scholarship\nPontificia Universidad Católica de Chile, Law Degree (2014)",
   "cargo": "Counsel",
-  "foto_mobile": "/src/assets/uploads/ricardo-celedón-mobile-equipo-omz-abogados.jpg",
+  "foto_mobile": "/src/assets/fotos-equipo/ricardo-celedón-mobile-equipo-omz-abogados.jpg",
   "linkedin": "https://www.linkedin.com/in/ricardo-celedon-otero/"
 }

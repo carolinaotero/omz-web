@@ -2,9 +2,9 @@
   "nombre": "Pedro Pablo",
   "linkedin": "https://www.linkedin.com/in/pedro-pablo-otero-vial-114b08202/",
   "mail": "pedropablo@omzabogados.cl",
-  "foto_thumbnail": "/src/assets/uploads/pedro-pablo-otero-thumbnail-equipo-omz-abogados.jpg",
-  "foto_desktop": "/src/assets/uploads/pedro-pablo-otero-desktop-equipo-omz-abogados.jpg",
-  "foto_mobile": "/src/assets/uploads/pedro-pablo-otero-mobile-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/src/assets/fotos-equipo/pedro-pablo-otero-thumbnail-equipo-omz-abogados.jpg",
+  "foto_desktop": "/src/assets/fotos-equipo/pedro-pablo-otero-desktop-equipo-omz-abogados.jpg",
+  "foto_mobile": "/src/assets/fotos-equipo/pedro-pablo-otero-mobile-equipo-omz-abogados.jpg",
   "primer_apellido": "Otero",
   "segundo_apellido": "Vial"
 }

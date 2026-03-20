@@ -3,8 +3,8 @@ backend:
   branch: main
 
 local_backend: true
-media_folder: "src/assets/uploads"
-public_folder: "/src/assets/uploads"
+media_folder: "src/assets/fotos-equipo"
+public_folder: "/src/assets/fotos-equipo"
 
 i18n:
   structure: multiple_files

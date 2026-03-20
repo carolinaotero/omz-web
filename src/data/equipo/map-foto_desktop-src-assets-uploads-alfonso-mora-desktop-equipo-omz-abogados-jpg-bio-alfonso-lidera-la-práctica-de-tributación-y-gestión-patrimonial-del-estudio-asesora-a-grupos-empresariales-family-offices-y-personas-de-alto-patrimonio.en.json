@@ -1,17 +1,17 @@
 {
-  "foto_desktop": "/src/assets/uploads/alfonso-mora-desktop-equipo-omz-abogados.jpg",
+  "foto_desktop": "/src/assets/fotos-equipo/alfonso-mora-desktop-equipo-omz-abogados.jpg",
   "segundo_apellido": "Domínguez",
   "bio": "Alfonso leads the firm's tax and wealth management practice. He advises business groups, family offices, and high-net-worth individuals on domestic and international tax matters, including international taxation, succession planning, and estate structuring.\n\nHis practice focuses on the structuring of investments and family assets, with a focus on tax efficiency, successions, and holding reorganizations. In addition, Alfonso represents his clients' interests before the Internal Revenue Service and the Tax and Customs Courts, in audit processes and in controversies and litigation.\n\nAlong with his activities as a partner at OMZ, Alfonso actively participates in initiatives linked to contemporary art and philanthropy. He is a member of the board of the Ca.Sa Contemporary Art Collection Foundation and is a counselor of the Antenna Foundation.",
   "nombre": "Alfonso",
   "primer_apellido": "Mora",
   "idiomas_hablados": "Spanish and English.",
   "areas_practica": "Tax, wealth management, and corporate.",
-  "foto_thumbnail": "/src/assets/uploads/alfonso-mora-thumbnail-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/src/assets/fotos-equipo/alfonso-mora-thumbnail-equipo-omz-abogados.jpg",
   "afiliaciones": "Member of the International Fiscal Association (IFA).",
   "mail": "alfonso@omzabogados.cl",
   "experiencia_previa": "Montero, Silva y Valdés (2021 – 2023)\nBaker McKenzie (2012 – 2019)",
   "educacion": "Maastricht University (Netherlands), Master in International and European Tax Law (2020).\nPontificia Universidad Católica de Chile, Law Degree (2012).",
   "cargo": "Partner",
-  "foto_mobile": "/src/assets/uploads/alfonso-mora-mobile-equipo-omz-abogados.jpg",
+  "foto_mobile": "/src/assets/fotos-equipo/alfonso-mora-mobile-equipo-omz-abogados.jpg",
   "linkedin": "https://www.linkedin.com/in/alfonso-mora-dom%C3%ADnguez-91948b33/"
 }
