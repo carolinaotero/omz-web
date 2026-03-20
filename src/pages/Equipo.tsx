@@ -76,15 +76,27 @@ function NameWithDot({ name }: { name: string }) {
 }
 
 function TeamMemberCard({ id, name, role, image, thumbnail }: { id: string, name: string, role: string, image: string, thumbnail?: string }) {
+  const imgSrc = thumbnail || image;
+  const hasImage = Boolean(imgSrc);
+
   return (
     <Link to={`/equipo/${id}`} className="block relative w-full aspect-[304/304] md:aspect-[304/304] overflow-hidden group flex flex-col justify-end px-4 pb-4">
       {/* Image Container with Zoom and Grayscale effect */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-        <img 
-          src={thumbnail || image} 
-          alt={name}
-          className="w-full h-full object-cover transition-all duration-500 ease-out grayscale group-hover:grayscale-0 group-hover:scale-110"
-        />
+        {hasImage ? (
+          <img 
+            src={imgSrc} 
+            alt={name}
+            className="w-full h-full object-cover transition-all duration-500 ease-out grayscale group-hover:grayscale-0 group-hover:scale-110"
+          />
+        ) : (
+          <div className="w-full h-full bg-[#f2f2f2] flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-110">
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" opacity="0.3">
+              <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="#38313e"/>
+              <path d="M12.0002 14.5C6.99023 14.5 2.91023 17.92 2.11023 22H21.8902C21.0902 17.92 17.0102 14.5 12.0002 14.5Z" fill="#38313e"/>
+            </svg>
+          </div>
+        )}
         {/* Overlay for inactive state (optional based on design, matching imported code) */}
         <div className="absolute inset-0 bg-[#38313e]/30 pointer-events-none transition-opacity duration-300 group-hover:opacity-0" />
       </div>
@@ -168,7 +180,7 @@ export default function Equipo() {
               <TeamMemberCard 
                 key={index}
                 id={member.id}
-                name={member.name}
+                name={member.nombre_corto}
                 role={getContent(member.role, member.role_en)}
                 image={member.image}
                 thumbnail={member.thumbnail}

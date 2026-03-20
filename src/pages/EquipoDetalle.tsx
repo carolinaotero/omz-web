@@ -96,7 +96,7 @@ export default function EquipoDetalle() {
   const awards = getContent(member.awards, member.awards_en);
 
   // Split name to ensure the last word and dot stay together
-  const fullDisplayName = member.fullName || member.name;
+  const fullDisplayName = member.nombre_completo || member.name;
   const nameParts = fullDisplayName.trim().split(/\s+/);
   const lastName = nameParts.pop();
   const firstName = nameParts.join(" ");
@@ -225,10 +225,12 @@ export default function EquipoDetalle() {
               </div>
               
               {/* Awards if any */}
-               {awards && (
+               {awards && awards.length > 0 && (
                 <div className="w-full mt-2">
                    <p className="font-montserrat font-medium underline decoration-solid [text-underline-position:from-font] mb-0 text-[#4a4a4b]">{t('equipo.details.awards')}</p>
-                   <p className="mt-1">{awards}</p>
+                   {awards.map((award: string, idx: number) => (
+                      <p key={idx} className="mb-0 mt-1">· {award}</p>
+                   ))}
                 </div>
                 )}
             </div>

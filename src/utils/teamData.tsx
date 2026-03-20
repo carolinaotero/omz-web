@@ -17,7 +17,7 @@ import imgNicolasSquare from "figma:asset/38af54adbac42f51e3f19118f3877bd691c2ac
 
 // Ricardo Celedón Images
 // Vertical image (Desktop)
-import imgRicardoVertical from "figma:asset/61a4c838fa4f8672b88c41dd82b7a41762d7f95b.png"; 
+import imgRicardoVertical from "figma:asset/61a4c838fa4f8672b88c41dd82b7a41762d7f95b.png";
 import imgRicardoHorizontal from "figma:asset/06428280f9a85f3966654c23dd3924bb316630dd.png";
 // Square image (Thumbnail) - Updated
 import imgRicardoSquare from "figma:asset/95a5ee275ef6e1dfa1f046913db9252de2f42a4e.png";
@@ -44,6 +44,8 @@ export interface TeamMember {
   id: string;
   name: string;
   fullName?: string;
+  nombre_corto: string;
+  nombre_completo: string;
   role: string;
   role_en: string;
   email: string;
@@ -63,297 +65,106 @@ export interface TeamMember {
   areasOfPractice_en?: string;
   affiliations?: string;
   affiliations_en?: string;
-  awards?: string;
-  awards_en?: string;
+  awards?: string[];
+  awards_en?: string[];
 }
 
-export const teamMembers: TeamMember[] = [
-  {
-    id: "gerardo-otero",
-    name: "Gerardo Otero",
-    fullName: "Gerardo Otero Vial",
-    role: "Socio",
-    role_en: "Partner",
-    email: "gerardo@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/gerardo-otero-a8513b127/",
-    image: imgGerardoVertical,
-    mobileImage: imgGerardoHorizontal,
-    thumbnail: imgGerardoSquare,
-    bio: [
-      "Gerardo es un abogado multidisciplinario con experiencia asesorando a empresas en gobierno corporativo, negociaciones y transacciones con aspectos comerciales y financieros relevantes. Además, cuenta con experiencia litigiosa en procedimientos administrativos sancionatorios y disputas comerciales frente a distintos órganos y tribunales.",
-      "Gerardo está habilitado para ejercer como abogado en Chile y fue admitido al Colegio de Abogados (State Bar) del Estado de California, EE.UU.",
-      "Además de abogado en OMZ, Gerardo es miembro del Departamento de Derecho Económico, Comercial y Tributario de la Facultad de Derecho de la Pontificia Universidad Católica de Chile y participa en directorios de empresas del rubro inmobiliario."
-    ],
-    bio_en: [
-      "Gerardo is a multidisciplinary lawyer with experience advising companies on corporate governance, negotiations, and transactions with relevant commercial and financial aspects. He also has litigation experience in administrative sanctioning proceedings and commercial disputes before various bodies and courts.",
-      "Gerardo is admitted to practice as a lawyer in Chile and was admitted to the State Bar of California, USA.",
-      "In addition to being a lawyer at OMZ, Gerardo is a member of the Department of Economic, Commercial, and Tax Law of the Faculty of Law of the Pontificia Universidad Católica de Chile and participates in boards of companies in the real estate sector."
-    ],
-    education: [
-      "Harvard Law School, LL.M.(2016) - Beca Chile CONICYT",
-      "Pontifica Universidad Católica de Chile, Licenciado en Derecho (2012) - Premio Luis Gutiérrez Allende (2011)"
-    ],
-    education_en: [
-      "Harvard Law School, LL.M. (2016) - Chile CONICYT Scholarship",
-      "Pontifica Universidad Católica de Chile, Law Degree (2012) - Luis Gutiérrez Allende Award (2011)"
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [
-      "Claro y Cía. (2012-2015; 2017-2021)",
-      "White & Case, oficina de Nueva York (2016-2017)"
-    ],
-    previousExperience_en: [
-      "Claro y Cía. (2012-2015; 2017-2021)",
-      "White & Case, New York office (2016-2017)"
-    ],
-    areasOfPractice: "Corporativo y resolución de disputas.",
-    areasOfPractice_en: "Corporate and dispute resolution.",
-    affiliations: "Colegio de Abogados de Chile A.G. y State Bar of California",
-    affiliations_en: "Chilean Bar Association and State Bar of California"
-  },
-  {
-    id: "alfonso-mora",
-    name: "Alfonso Mora",
-    fullName: "Alfonso Mora Domínguez",
-    role: "Socio",
-    role_en: "Partner",
-    email: "alfonso@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/alfonso-mora-dom%C3%ADnguez-91948b33/",
-    image: imgAlfonsoVertical,
-    mobileImage: imgAlfonsoHorizontal,
-    thumbnail: imgAlfonsoSquare,
-    bio: [
-      "Alfonso lidera la práctica de tributación y gestión patrimonial del estudio. Asesora a grupos empresariales, family offices y personas de alto patrimonio en materias tributarias nacionales e internacionales, incluyendo tributación internacional, planificación sucesoria y estructuración patrimonial.",
-      "Su práctica se centra en la estructuración de inversiones y patrimonios familiares, con foco en eficiencia fiscal, sucesiones y reorganizaciones de holdings. Además, Alfonso representa los intereses de sus clientes ante el Servicio de Impuestos Internos y los Tribunales Tributarios y Aduaneros, en procesos de fiscalización y en controversias y litigios.",
-      "Junto con sus actividades como socio en OMZ, Alfonso participa activamente en iniciativas vinculadas al arte contemporáneo y la filantropía. Integra el directorio de la Fundación Colección de Arte Contemporáneo Ca.Sa y es consejero de Fundación Antenna."
-    ],
-    bio_en: [
-      "Alfonso leads the firm's tax and wealth management practice. He advises business groups, family offices, and high-net-worth individuals on domestic and international tax matters, including international taxation, succession planning, and estate structuring.",
-      "His practice focuses on the structuring of investments and family assets, with a focus on tax efficiency, successions, and holding reorganizations. In addition, Alfonso represents his clients' interests before the Internal Revenue Service and the Tax and Customs Courts, in audit processes and in controversies and litigation.",
-      "Along with his activities as a partner at OMZ, Alfonso actively participates in initiatives linked to contemporary art and philanthropy. He is a member of the board of the Ca.Sa Contemporary Art Collection Foundation and is a counselor of the Antenna Foundation."
-    ],
-    education: [
-      "Maastricht University (Holanda), Máster en Derecho Tributario Internacional y Europeo (2020).",
-      "Pontificia Universidad Católica de Chile, Licenciado en Derecho (2012)."
-    ],
-    education_en: [
-      "Maastricht University (Netherlands), Master in International and European Tax Law (2020).",
-      "Pontificia Universidad Católica de Chile, Law Degree (2012)."
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [
-      "Montero, Silva y Valdés (2021 – 2023)",
-      "Baker McKenzie (2012 – 2019)"
-    ],
-    previousExperience_en: [
-      "Montero, Silva y Valdés (2021 – 2023)",
-      "Baker McKenzie (2012 – 2019)"
-    ],
-    areasOfPractice: "Tributario, gestión patrimonial y corporativo.",
-    areasOfPractice_en: "Tax, wealth management, and corporate.",
-    affiliations: "Miembro del International Fiscal Association (IFA).",
-    affiliations_en: "Member of the International Fiscal Association (IFA)."
-  },
-  {
-    id: "nicolas-zisis",
-    name: "Nicolás Zisis",
-    fullName: "Nicolás Zisis Banz",
-    role: "Socio",
-    role_en: "Partner",
-    email: "nicolas@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/nicolas-zisis-banz-300b7a196/",
-    image: imgNicolasVertical,
-    mobileImage: imgNicolasHorizontal,
-    thumbnail: imgNicolasSquare,
-    bio: [
-      "Nicolás es especialista en la resolución de controversias complejas. Con más de 15 años de experiencia, ha asesorado y representado a organismos públicos y empresas privadas en disputas nacionales e internacionales, actuando en diversas jurisdicciones y centros arbitrales.",
-      "Cuenta con reconocida experiencia en los sectores de construcción e infraestructura, proyectos mineros, recursos naturales y en litigios societarios, acompañando a sus clientes en todas las etapas del conflicto, desde su prevención hasta su representación en juicio.",
-      "Nicolás es árbitro del Centro de Arbitraje y Mediación de la Cámara de Comercio de Santiago (CAM Santiago). Actualmente, integra su lista de árbitros jóvenes.",
-      "Además de su trabajo en OMZ, Nicolás es profesor part-time de Derecho Civil en la Universidad Diego Portales y ha sido invitado a dictar clases sobre arbitraje internacional en programas de pregrado y posgrado de la Universidad de Chile."
-    ],
-    bio_en: [
-      "Nicolás is a specialist in the resolution of complex disputes. With over 15 years of experience, he has advised and represented public bodies and private companies in domestic and international disputes, acting in various jurisdictions and arbitration centers.",
-      "He has recognized experience in the construction and infrastructure sectors, mining projects, natural resources, and corporate litigation, accompanying his clients in all stages of the conflict, from its prevention to its representation in court.",
-      "Nicolás is an arbitrator of the Arbitration and Mediation Center of the Santiago Chamber of Commerce (CAM Santiago). Currently, he is on its list of young arbitrators.",
-      "In addition to his work at OMZ, Nicolás is a part-time professor of Civil Law at Diego Portales University and has been invited to lecture on international arbitration in undergraduate and graduate programs at the University of Chile."
-    ],
-    education: [
-      "Universidad de Oxford, Magister Juris (2017) Beca Chile CONICYT",
-      "Universidad de Chile, Licenciado en Ciencias Jurídicas y Sociales (2012) Ranking licenciatura 1°/287"
-    ],
-    education_en: [
-      "University of Oxford, Magister Juris (2017) Chile CONICYT Scholarship",
-      "University of Chile, Law Degree (2012) Ranking 1st/287"
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [
-      "Bofill, Mir & Álvarez Jana (2018-2021)",
-      "Freshfields Bruckhaus Deringer, oficina de Londres (2017-2018)",
-      "Claro & Cía. (2010-2016)"
-    ],
-    previousExperience_en: [
-      "Bofill, Mir & Álvarez Jana (2018-2021)",
-      "Freshfields Bruckhaus Deringer, London office (2017-2018)",
-      "Claro & Cía. (2010-2016)"
-    ],
-    areasOfPractice: "Resolución de disputas.",
-    areasOfPractice_en: "Dispute resolution.",
-    affiliations: "Colegio de Abogados de Chile A.G.",
-    affiliations_en: "Chilean Bar Association"
-  },
-  {
-    id: "ricardo-celedon",
-    name: "Ricardo Celedón",
-    fullName: "Ricardo Celedón Otero",
-    role: "Consejero",
-    role_en: "Counsel",
-    email: "ricardo@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/ricardo-celedon-otero/",
-    image: imgRicardoVertical,
-    mobileImage: imgRicardoHorizontal,
-    thumbnail: imgRicardoSquare,
-    bio: [
-      "Ricardo centra su práctica en derecho corporativo, transacciones complejas, tecnología e infraestructura. Su especialización en derecho y tecnología lo ha posicionado como asesor recurrente de startups, fondos de venture capital y compañías que desarrollan soluciones basadas en inteligencia artificial.",
-      "Con más de una década de experiencia, Ricardo ha participado en procesos de fusiones y adquisiciones, rondas de financiamiento, estructuración de joint ventures y contratación tecnológica. Asimismo, ha acompañado a sus clientes en la obtención de permisos administrativos y en la negociación de contratos vinculados a obras públicas y proyectos de infraestructura."
-    ],
-    bio_en: [
-      "Ricardo focuses his practice on corporate law, complex transactions, technology, and infrastructure. His specialization in law and technology has positioned him as a recurring advisor to startups, venture capital funds, and companies that develop solutions based on artificial intelligence.",
-      "With more than a decade of experience, Ricardo has participated in mergers and acquisitions, financing rounds, joint venture structuring, and technology contracting. Likewise, he has accompanied his clients in obtaining administrative permits and in negotiating contracts linked to public works and infrastructure projects."
-    ],
-    education: [
-      "University of California, Berkeley, Master of Laws (LL.M.) con Certificado en Derecho y Tecnología (2020). Beca Chile CONICYT",
-      "Pontificia Universidad Católica de Chile, Licenciado en Derecho (2014)"
-    ],
-    education_en: [
-      "University of California, Berkeley, Master of Laws (LL.M.) with Certificate in Law and Technology (2020). Chile CONICYT Scholarship",
-      "Pontificia Universidad Católica de Chile, Law Degree (2014)"
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [
-      "Echeverría Ilharreborde Scagliotti (2021-2024)",
-      "CMS Carey & Allende (2014-2021)"
-    ],
-    previousExperience_en: [
-      "Echeverría Ilharreborde Scagliotti (2021-2024)",
-      "CMS Carey & Allende (2014-2021)"
-    ],
-    areasOfPractice: "Corporativo, M&A, tecnología, venture capital, infraestructura y proyectos, y derecho administrativo.",
-    areasOfPractice_en: "Corporate, M&A, technology, venture capital, infrastructure and projects, and administrative law.",
-    affiliations: "Colegio de Abogados de Chile A.G.",
-    affiliations_en: "Chilean Bar Association"
-  },
-  {
-    id: "pedro-pablo-otero",
-    name: "Pedro Pablo Otero",
-    fullName: "Pedro Pablo Otero Vial",
-    role: "Asociado Senior",
-    role_en: "Senior Associate",
-    email: "pedropablo@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/pedro-pablo-otero-vial-114b08202/",
-    image: imgPedroPabloVertical,
-    mobileImage: imgPedroPabloHorizontal,
-    thumbnail: imgPedroPabloSquare,
-    bio: [
-      "Pedro Pablo es especialista en materias tributarias. Tiene experiencia asesorando operaciones locales e internacionales, en distintas industrias. Su práctica incluye planificación tributaria, realización de auditorías y representación de clientes en procedimientos administrativos ante autoridades fiscales, entre otras.",
-      "Actualmente cursa el Master of Science in Taxation en la Universidad de Oxford, con enfoque en tributación internacional y política fiscal. Previamente obtuvo el LL.M. con especialización en tributación en la London School of Economics and Political Science (LSE), con énfasis en tributación transfronteriza, sistemas fiscales comparados y contabilidad en la economía global.",
-      "Pedro Pablo ha sido ayudante de Derecho Comercial, Derecho Civil y Derecho Tributario en la Universidad Católica."
-    ],
-    bio_en: [
-      "Pedro Pablo is a specialist in tax matters. He has experience advising local and international operations in different industries. His practice includes tax planning, conducting audits, and representing clients in administrative proceedings before tax authorities, among others.",
-      "He is currently studying for the Master of Science in Taxation at the University of Oxford, focusing on international taxation and fiscal policy. He previously obtained an LL.M. with a specialization in taxation at the London School of Economics and Political Science (LSE), with an emphasis on cross-border taxation, comparative tax systems, and accounting in the global economy.",
-      "Pedro Pablo has been a teaching assistant in Commercial Law, Civil Law, and Tax Law at the Catholic University."
-    ],
-    education: [
-      "University of Oxford, MSc in Taxation (candidato). Beca Field Court Tax Chambers.",
-      "The London School of Economics and Political Science (LSE), LL.M. con especialización en Derecho Tributario (2025).",
-      "Pontificia Universidad Católica de Chile, Licenciado en Derecho (2019). Distinción máxima."
-    ],
-    education_en: [
-      "University of Oxford, MSc in Taxation (candidate). Field Court Tax Chambers Scholarship.",
-      "The London School of Economics and Political Science (LSE), LL.M. with specialization in Tax Law (2025).",
-      "Pontificia Universidad Católica de Chile, Law Degree (2019). Maximum distinction."
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [
-      "MBC Abogados (2021–2024)",
-      "Fiscalía del Ministerio de Bienes Nacionales (2020)"
-    ],
-    previousExperience_en: [
-      "MBC Abogados (2021–2024)",
-      "Ministry of National Assets Prosecutor's Office (2020)"
-    ],
-    areasOfPractice: "Tributario, corporativo y gestión patrimonial.",
-    areasOfPractice_en: "Tax, corporate, and wealth management."
-  },
-  {
-    id: "isidora-valenzuela",
-    name: "Isidora Valenzuela",
-    fullName: "Isidora Valenzuela González",
-    role: "Asociada",
-    role_en: "Associate",
-    email: "isidora@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/isidora-valenzuela-40ba19211/",
-    image: imgIsidoraVertical,
-    mobileImage: imgIsidoraHorizontal,
-    thumbnail: imgIsidoraSquare,
-    bio: [
-      "Isidora es parte de nuestra área de resolución de disputas. Además, cuenta con experiencia en derecho corporativo, financiamiento de proyectos inmobiliarios y de infraestructura, y en asuntos de carácter transaccional.",
-      "Isidora es ayudante de Derecho Civil en la Universidad de Chile. Anteriormente, fue ayudante de los cursos de Introducción al Derecho y Derecho Constitucional en la misma universidad."
-    ],
-    bio_en: [
-      "Isidora is part of our dispute resolution area. In addition, she has experience in corporate law, real estate and infrastructure project financing, and transactional matters.",
-      "Isidora is a teaching assistant in Civil Law at the University of Chile. Previously, she was a teaching assistant for the Introduction to Law and Constitutional Law courses at the same university."
-    ],
-    education: [
-      "Universidad de Chile, Licenciada en Ciencias Jurídicas y Sociales (2024). Distinción máxima."
-    ],
-    education_en: [
-      "University of Chile, Law Degree (2024). Maximum distinction."
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [],
-    previousExperience_en: [],
-    areasOfPractice: "Resolución de disputas.",
-    areasOfPractice_en: "Dispute resolution.",
-    awards: "Premio Excelencia Académica “Facultad de Derecho Universidad de Chile” (2022), al mejor promedio de notas de su generación.",
-    awards_en: "“University of Chile Law School” Academic Excellence Award (2022), for the best grade point average of her generation."
-  },
-  {
-    id: "jaime-zanartu",
-    name: "Jaime Zañartu",
-    fullName: "Jaime Zañartu Baeza",
-    role: "Asociado",
-    role_en: "Associate",
-    email: "jaime@omzabogados.cl",
-    linkedin: "https://www.linkedin.com/in/jaime-za%C3%B1artu-baeza-43390a291",
-    image: imgJaimeVertical,
-    mobileImage: imgJaimeHorizontal,
-    thumbnail: imgJaimeSquare,
-    bio: [
-      "Jaime enfoca su práctica en materias de derecho tributario, derecho corporativo y de gestión patrimonial.",
-      "Realizó un intercambio académico en la Vrije Universiteit Amsterdam (Países Bajos), con énfasis en ciencias sociales."
-    ],
-    bio_en: [
-      "Jaime focuses his practice on tax law, corporate law, and wealth management.",
-      "He completed an academic exchange at Vrije Universiteit Amsterdam (Netherlands), with an emphasis on social sciences."
-    ],
-    education: [
-      "Pontificia Universidad Católica de Chile. Licenciado en Derecho, con especialidad en Derecho Privado (2024)."
-    ],
-    education_en: [
-      "Pontificia Universidad Católica de Chile. Law Degree, with a specialty in Private Law (2024)."
-    ],
-    languages: ["Español", "Inglés"],
-    languages_en: ["Spanish", "English"],
-    previousExperience: [],
-    previousExperience_en: [],
-    areasOfPractice: "Tributario, corporativo y gestión patrimonial.",
-    areasOfPractice_en: "Tax, corporate, and wealth management."
+// Load JSON files dynamically from Decap CMS
+const esData = import.meta.glob('../data/equipo/*.es.json', { eager: true });
+const enData = import.meta.glob('../data/equipo/*.en.json', { eager: true });
+
+function formatText(text: string | undefined): string[] {
+  if (!text) return [];
+  // Split by newline and filter out empty lines
+  return text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+}
+
+const rawMembers = Object.keys(esData).map(path => {
+  const moduleEs = esData[path] as any;
+  const esRecord = moduleEs.default || moduleEs;
+
+  const fileName = path.split('/').pop() || "";
+  const id = fileName.replace('.es.json', '');
+
+  const enPath = path.replace('.es.json', '.en.json');
+  const moduleEn = enData[enPath] as any;
+  const enRecord = moduleEn ? (moduleEn.default || moduleEn) : esRecord;
+
+  const nombre = esRecord.nombre || '';
+  const primer = esRecord.primer_apellido || '';
+  const segundo = esRecord.segundo_apellido || '';
+  const nombreCorto = `${nombre} ${primer}`.trim();
+  const nombreCompleto = `${nombre} ${primer} ${segundo}`.trim().replace(/\s+/g, ' ');
+
+  return {
+    id,
+    name: nombreCorto, // Keep for backward compatibility
+    fullName: nombreCompleto, // Keep for backward compatibility
+    nombre_corto: nombreCorto,
+    nombre_completo: nombreCompleto,
+    _primer_apellido: primer, // Used strictly for sorting
+    role: esRecord.cargo || '',
+    role_en: enRecord.cargo || '',
+    email: esRecord.mail || '',
+    linkedin: esRecord.linkedin || '',
+    image: esRecord.foto_desktop || '',
+    mobileImage: esRecord.foto_mobile || '',
+    thumbnail: esRecord.foto_thumbnail || '',
+    bio: formatText(esRecord.bio),
+    bio_en: formatText(enRecord.bio),
+    education: formatText(esRecord.educacion),
+    education_en: formatText(enRecord.educacion),
+    languages: (esRecord.idiomas_hablados || '').split(',').map((l: string) => l.trim()),
+    languages_en: (enRecord.idiomas_hablados || '').split(',').map((l: string) => l.trim()),
+    previousExperience: formatText(esRecord.experiencia_previa),
+    previousExperience_en: formatText(enRecord.experiencia_previa),
+    areasOfPractice: esRecord.areas_practica || '',
+    areasOfPractice_en: enRecord.areas_practica || '',
+    affiliations: esRecord.afiliaciones || '',
+    affiliations_en: enRecord.afiliaciones || '',
+    awards: formatText(esRecord.premios),
+    awards_en: formatText(enRecord.premios)
+  };
+});
+
+// Implementacion de Lógica de Ordenamiento Jerárquico
+const hierarchyMap: Record<string, number> = {
+  "Socio": 1,
+  "Socia": 1,
+  "Consejero": 2,
+  "Consejera": 2,
+  "Asociado Senior": 3,
+  "Asociada Senior": 3,
+  "Asociado": 4,
+  "Asociada": 4,
+};
+
+const fixedSocioOrder = ["gerardo-otero", "alfonso-mora", "nicolas-zisis"];
+
+export const teamMembers: TeamMember[] = rawMembers.sort((a, b) => {
+  const rankA = hierarchyMap[a.role] || 99;
+  const rankB = hierarchyMap[b.role] || 99;
+
+  // 1. Sort by Hierarchy (Socio -> Consejero -> Asociado Senior -> Asociado)
+  if (rankA !== rankB) {
+    return rankA - rankB;
   }
-];
+
+  // 2. Handle Socios (rank 1) specifically for the Podium
+  if (rankA === 1) {
+    let indexA = fixedSocioOrder.indexOf(a.id);
+    let indexB = fixedSocioOrder.indexOf(b.id);
+
+    if (indexA === -1) indexA = 999;
+    if (indexB === -1) indexB = 999;
+
+    // If their fixed order rank differs, sort by that rank (pos order vs 999 fallback)
+    if (indexA !== indexB) {
+      return indexA - indexB;
+    }
+    // If both are 999 (not in podium), let it fall through to the alphabetical sort
+  }
+
+  // 3. Alphabetical Sort for everyone else inside their own rank
+  return a._primer_apellido.localeCompare(b._primer_apellido);
+}).map(({ _primer_apellido, ...cleanMember }) => cleanMember);

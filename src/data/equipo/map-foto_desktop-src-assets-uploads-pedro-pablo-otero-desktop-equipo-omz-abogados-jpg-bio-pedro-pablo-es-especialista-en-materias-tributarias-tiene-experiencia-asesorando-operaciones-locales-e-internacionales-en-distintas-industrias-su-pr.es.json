@@ -1,0 +1,16 @@
+{
+  "foto_desktop": "/src/assets/uploads/pedro-pablo-otero-desktop-equipo-omz-abogados.jpg",
+  "segundo_apellido": "Vial",
+  "bio": "Pedro Pablo es especialista en materias tributarias. Tiene experiencia asesorando operaciones locales e internacionales, en distintas industrias. Su práctica incluye planificación tributaria, realización de auditorías y representación de clientes en procedimientos administrativos ante autoridades fiscales, entre otras.\n\nActualmente cursa el Master of Science in Taxation en la Universidad de Oxford, con enfoque en tributación internacional y política fiscal. Previamente obtuvo el LL.M. con especialización en tributación en la London School of Economics and Political Science (LSE), con énfasis en tributación transfronteriza, sistemas fiscales comparados y contabilidad en la economía global.\n\nPedro Pablo ha sido ayudante de Derecho Comercial, Derecho Civil y Derecho Tributario en la Universidad Católica.",
+  "nombre": "Pedro Pablo",
+  "primer_apellido": "Otero",
+  "idiomas_hablados": "Español e Inglés.",
+  "areas_practica": "Tributario, corporativo y gestión patrimonial.",
+  "foto_thumbnail": "/src/assets/uploads/pedro-pablo-otero-thumbnail-equipo-omz-abogados.jpg",
+  "mail": "pedropablo@omzabogados.cl",
+  "experiencia_previa": "MBC Abogados (2021–2024)\nFiscalía del Ministerio de Bienes Nacionales (2020)",
+  "educacion": "University of Oxford, MSc in Taxation (candidato). Beca Field Court Tax Chambers.\nThe London School of Economics and Political Science (LSE), LL.M. con especialización en Derecho Tributario (2025).\nPontificia Universidad Católica de Chile, Licenciado en Derecho (2019). Distinción máxima.",
+  "cargo": "Asociado Senior",
+  "foto_mobile": "/src/assets/uploads/pedro-pablo-otero-mobile-equipo-omz-abogados.jpg",
+  "linkedin": "https://www.linkedin.com/in/pedro-pablo-otero-vial-114b08202/"
+}
