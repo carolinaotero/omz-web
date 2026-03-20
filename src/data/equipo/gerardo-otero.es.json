@@ -1,5 +1,5 @@
 {
-  "foto_desktop": "/src/assets/fotos-equipo/gerardo-otero-desktop-equipo-omz-abogados.jpg",
+  "foto_desktop": "/assets/fotos-equipo/gerardo-otero-desktop-equipo-omz-abogados.jpg",
   "foto": "/assets/fotos-equipo/2afa4e17b9fc335d5685aa9d3eb04bbf3f8f855c.png",
   "bio": "Gerardo es un abogado multidisciplinario con experiencia asesorando a empresas en gobierno corporativo, negociaciones y transacciones con aspectos comerciales y financieros relevantes. Además, cuenta con experiencia litigiosa en procedimientos administrativos sancionatorios y disputas comerciales frente a distintos órganos y tribunales.\n\nGerardo está habilitado para ejercer como abogado en Chile y fue admitido al Colegio de Abogados (State Bar) del Estado de California, EE.UU.",
   "nombre": "Gerardo",
@@ -7,12 +7,12 @@
   "segundo_apellido": "Vial",
   "idiomas_hablados": "Español, Inglés",
   "areas_practica": "Corporativo y resolución de disputas.",
-  "foto_thumbnail": "/src/assets/fotos-equipo/gerardo-otero-thumbnail-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/assets/fotos-equipo/gerardo-otero-thumbnail-equipo-omz-abogados.jpg",
   "afiliaciones": "Colegio de Abogados de Chile A.G. y State Bar of California",
   "mail": "gerardo@omzabogados.cl",
   "experiencia_previa": "Claro y Cía. (2012-2015; 2017-2021)\nWhite & Case, oficina de Nueva York (2016-2017)",
   "educacion": "Harvard Law School, LL.M.(2016) - Beca Chile CONICYT\nPontifica Universidad Católica de Chile, Licenciado en Derecho (2012) - Premio Luis Gutiérrez Allende (2011)",
   "cargo": "Socio",
-  "foto_mobile": "/src/assets/fotos-equipo/gerardo-otero-mobile-equipo-omz-abogados.jpg",
+  "foto_mobile": "/assets/fotos-equipo/gerardo-otero-mobile-equipo-omz-abogados.jpg",
   "linkedin": "https://www.linkedin.com/in/gerardo-otero-a8513b127/"
 }

@@ -1,5 +1,5 @@
 {
-  "foto_desktop": "/src/assets/fotos-equipo/nicolás-zisis-desktop-equipo-omz-abogados.jpg",
+  "foto_desktop": "/assets/fotos-equipo/nicolás-zisis-desktop-equipo-omz-abogados.jpg",
   "premios": "",
   "segundo_apellido": "Banz",
   "bio": "Nicolás es especialista en la resolución de controversias complejas. Con más de 15 años de experiencia, ha asesorado y representado a organismos públicos y empresas privadas en disputas nacionales e internacionales, actuando en diversas jurisdicciones y centros arbitrales.\n\nCuenta con reconocida experiencia en los sectores de construcción e infraestructura, proyectos mineros, recursos naturales y en litigios societarios, acompañando a sus clientes en todas las etapas del conflicto, desde su prevención hasta su representación en juicio.\n\nNicolás es árbitro del Centro de Arbitraje y Mediación de la Cámara de Comercio de Santiago (CAM Santiago). Actualmente, integra su lista de árbitros jóvenes.\n\nAdemás de su trabajo en OMZ, Nicolás es profesor part-time de Derecho Civil en la Universidad Diego Portales y ha sido invitado a dictar clases sobre arbitraje internacional en programas de pregrado y posgrado de la Universidad de Chile.",
@@ -7,12 +7,12 @@
   "primer_apellido": "Zisis",
   "idiomas_hablados": "Español e Inglés.",
   "areas_practica": "Resolución de disputas.",
-  "foto_thumbnail": "/src/assets/fotos-equipo/nicolás-zisis-thumbnail-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/assets/fotos-equipo/nicolás-zisis-thumbnail-equipo-omz-abogados.jpg",
   "afiliaciones": "Colegio de Abogados de Chile A.G.",
   "mail": "nicolas@omzabogados.cl",
   "experiencia_previa": "Bofill, Mir & Álvarez Jana (2018-2021)\nFreshfields Bruckhaus Deringer, oficina de Londres (2017-2018)\nClaro & Cía. (2010-2016)",
   "educacion": "Universidad de Oxford, Magister Juris (2017) Beca Chile CONICYT\nUniversidad de Chile, Licenciado en Ciencias Jurídicas y Sociales (2012) Ranking licenciatura 1°/287",
   "cargo": "Socio",
-  "foto_mobile": "/src/assets/fotos-equipo/nicolás-zisis-mobile-equipo-omz-abogados.jpg",
+  "foto_mobile": "/assets/fotos-equipo/nicolás-zisis-mobile-equipo-omz-abogados.jpg",
   "linkedin": "https://www.linkedin.com/in/nicolas-zisis-banz-300b7a196/"
 }

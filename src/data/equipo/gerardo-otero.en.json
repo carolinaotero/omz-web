@@ -1,5 +1,5 @@
 {
-  "foto_desktop": "/src/assets/fotos-equipo/gerardo-otero-desktop-equipo-omz-abogados.jpg",
+  "foto_desktop": "/assets/fotos-equipo/gerardo-otero-desktop-equipo-omz-abogados.jpg",
   "foto": "/assets/fotos-equipo/2afa4e17b9fc335d5685aa9d3eb04bbf3f8f855c.png",
   "bio": "Gerardo is a multidisciplinary lawyer with experience advising companies on corporate governance, negotiations, and transactions with relevant commercial and financial aspects. He also has litigation experience in administrative sanctioning proceedings and commercial disputes before various bodies and courts.\n\nGerardo is admitted to practice as a lawyer in Chile and was admitted to the State Bar of California, USA.",
   "nombre": "Gerardo",
@@ -7,12 +7,12 @@
   "segundo_apellido": "Vial",
   "idiomas_hablados": "Spanish, English",
   "areas_practica": "Corporate and dispute resolution.",
-  "foto_thumbnail": "/src/assets/fotos-equipo/gerardo-otero-thumbnail-equipo-omz-abogados.jpg",
+  "foto_thumbnail": "/assets/fotos-equipo/gerardo-otero-thumbnail-equipo-omz-abogados.jpg",
   "afiliaciones": "Chilean Bar Association and State Bar of California",
   "mail": "gerardo@omzabogados.cl",
   "experiencia_previa": "Claro y Cía. (2012-2015; 2017-2021)\nWhite & Case, New York office (2016-2017)",
   "educacion": "Harvard Law School, LL.M. (2016) - Chile CONICYT Scholarship\nPontifica Universidad Católica de Chile, Law Degree (2012) - Luis Gutiérrez Allende Award (2011)",
   "cargo": "Partner",
-  "foto_mobile": "/src/assets/fotos-equipo/gerardo-otero-mobile-equipo-omz-abogados.jpg",
+  "foto_mobile": "/assets/fotos-equipo/gerardo-otero-mobile-equipo-omz-abogados.jpg",
   "linkedin": "https://www.linkedin.com/in/gerardo-otero-a8513b127/"
 }

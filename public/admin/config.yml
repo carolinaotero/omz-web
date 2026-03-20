@@ -4,7 +4,7 @@ backend:
 
 local_backend: true
 media_folder: "src/assets/fotos-equipo"
-public_folder: "/src/assets/fotos-equipo"
+public_folder: "/assets/fotos-equipo"
 
 i18n:
   structure: multiple_files

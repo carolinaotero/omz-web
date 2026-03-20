@@ -73,6 +73,16 @@ export interface TeamMember {
 const esData = import.meta.glob('../data/equipo/*.es.json', { eager: true });
 const enData = import.meta.glob('../data/equipo/*.en.json', { eager: true });
 
+// Load images dynamically from Decap CMS folder to let Vite bundle them
+const imageModules = import.meta.glob('/src/assets/fotos-equipo/*.{png,jpg,jpeg,webp,svg}', { eager: true });
+
+function getImageUrl(cmsPath: string | undefined): string {
+  if (!cmsPath) return '';
+  const srcPath = cmsPath.replace('/assets/fotos-equipo/', '/src/assets/fotos-equipo/');
+  const mod = imageModules[srcPath] as any;
+  return mod ? (mod.default || mod) : cmsPath;
+}
+
 function formatText(text: string | undefined): string[] {
   if (!text) return [];
   // Split by newline and filter out empty lines
@@ -107,9 +117,9 @@ const rawMembers = Object.keys(esData).map(path => {
     role_en: enRecord.cargo || '',
     email: esRecord.mail || '',
     linkedin: esRecord.linkedin || '',
-    image: esRecord.foto_desktop || '',
-    mobileImage: esRecord.foto_mobile || '',
-    thumbnail: esRecord.foto_thumbnail || '',
+    image: getImageUrl(esRecord.foto_desktop),
+    mobileImage: getImageUrl(esRecord.foto_mobile),
+    thumbnail: getImageUrl(esRecord.foto_thumbnail),
     bio: formatText(esRecord.bio),
     bio_en: formatText(enRecord.bio),
     education: formatText(esRecord.educacion),
