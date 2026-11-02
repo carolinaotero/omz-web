@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import type { RouteObject } from "react-router";
 import Home from "../imports/Home";
 import Nosotros from "../pages/Nosotros";
 import Hacemos from "../pages/Hacemos";
@@ -7,7 +7,7 @@ import Equipo from "../pages/Equipo";
 import EquipoDetalle from "../pages/EquipoDetalle";
 import NotFound from "../pages/NotFound";
 
-export const router = createBrowserRouter([
+export const routes: RouteObject[] = [
   {
     path: "/",
     Component: Home,
@@ -36,4 +36,4 @@ export const router = createBrowserRouter([
     path: "*",
     Component: NotFound,
   },
-]);
+];
