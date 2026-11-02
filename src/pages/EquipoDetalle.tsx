@@ -244,7 +244,7 @@ export default function EquipoDetalle() {
           <div className="relative h-full w-auto">
             <img 
               src={member.image} 
-              alt={member.name} 
+              alt={`${member.nombre_completo}, ${getContent(member.role, member.role_en)} en OMZ Abogados`} 
               className="h-full w-auto object-cover"
             />
             {/* Yellow Dot Overlay */}
@@ -263,7 +263,7 @@ export default function EquipoDetalle() {
         <div className="block lg:hidden w-full aspect-[3/2] relative shrink-0 order-first mb-8">
            <img 
               src={member.mobileImage} 
-              alt={member.name} 
+              alt={`${member.nombre_completo}, ${getContent(member.role, member.role_en)} en OMZ Abogados`} 
               className="w-full h-full object-cover"
             />
         </div>

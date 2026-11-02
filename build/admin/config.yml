@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: "src/assets/fotos-equipo"
+public_folder: "/assets/fotos-equipo"
+
+i18n:
+  structure: multiple_files
+  locales: [es, en]
+  default_locale: es
+
+collections:
+  - name: "equipo"
+    label: "Equipo"
+    folder: "src/data/equipo"
+    create: true
+    slug: "{{nombre}}-{{primer_apellido}}"
+    summary: "{{nombre}} {{primer_apellido}} - {{cargo}}"
+    format: "json"
+    i18n: true
+    fields:
+      - {label: "Nombre", name: "nombre", widget: "string", i18n: duplicate}
+      - {label: "Primer Apellido", name: "primer_apellido", widget: "string", i18n: duplicate}
+      - {label: "Segundo Apellido", name: "segundo_apellido", widget: "string", i18n: duplicate}
+      - {label: "Cargo", name: "cargo", widget: "string", i18n: true}
+      - {label: "LinkedIn", name: "linkedin", widget: "string", i18n: duplicate}
+      - {label: "Email", name: "mail", widget: "string", i18n: duplicate}
+      - {label: "Biografía", name: "bio", widget: "markdown", i18n: true}
+      - {label: "Áreas de práctica", name: "areas_practica", widget: "text", i18n: true}
+      - {label: "Educación", name: "educacion", widget: "text", i18n: true}
+      - {label: "Experiencia previa", name: "experiencia_previa", widget: "text", required: false, i18n: true}
+      - {label: "Premios", name: "premios", widget: "text", required: false, i18n: true}
+      - {label: "Afiliaciones", name: "afiliaciones", widget: "text", required: false, i18n: true}
+      - {label: "Idiomas hablados", name: "idiomas_hablados", widget: "string", i18n: true}
+      - {label: "Foto Miniatura - Vista Grilla", name: "foto_thumbnail", widget: "image", i18n: duplicate}
+      - {label: "Foto Biografía - Desktop > 1024px", name: "foto_desktop", widget: "image", i18n: duplicate}
+      - {label: "Foto Biografía - Mobile/Tablet < 1024px", name: "foto_mobile", widget: "image", i18n: duplicate}

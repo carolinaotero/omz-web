@@ -75,7 +75,7 @@ function NameWithDot({ name }: { name: string }) {
   );
 }
 
-function TeamMemberCard({ id, name, role, image, thumbnail }: { id: string, name: string, role: string, image: string, thumbnail?: string }) {
+function TeamMemberCard({ id, name, fullName, role, image, thumbnail }: { id: string, name: string, fullName?: string, role: string, image: string, thumbnail?: string }) {
   const imgSrc = thumbnail || image;
   const hasImage = Boolean(imgSrc);
 
@@ -86,7 +86,8 @@ function TeamMemberCard({ id, name, role, image, thumbnail }: { id: string, name
         {hasImage ? (
           <img 
             src={imgSrc} 
-            alt={name}
+            alt={`${fullName || name}, ${role} en OMZ Abogados`}
+            loading="lazy"
             className="w-full h-full object-cover transition-all duration-500 ease-out grayscale group-hover:grayscale-0 group-hover:scale-110"
           />
         ) : (
@@ -181,6 +182,7 @@ export default function Equipo() {
                 key={index}
                 id={member.id}
                 name={member.nombre_corto}
+                fullName={member.nombre_completo}
                 role={getContent(member.role, member.role_en)}
                 image={member.image}
                 thumbnail={member.thumbnail}

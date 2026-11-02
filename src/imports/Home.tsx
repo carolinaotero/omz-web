@@ -288,6 +288,7 @@ export default function Home() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden flex flex-col" data-name="Home">
+      <h1 style={{ position: "absolute", width: 1, height: 1, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", border: 0 }}>OMZ Abogados: estudio de abogados en Santiago, Chile, especializado en resolución de disputas, asesoría tributaria y wealth management, y asesoría corporativa</h1>
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none z-0">
         <AnimatePresence>
           <motion.img 
