@@ -3,6 +3,18 @@
   <html lang="es">
     <head>
       <meta charset="UTF-8" />
+      <!-- Decap CMS / Netlify Identity: los correos de invitación, recuperación de contraseña
+           y confirmación enlazan a la portada (/#recovery_token=...). Este script los envía
+           a /admin/, donde el widget de Netlify Identity muestra el formulario correspondiente. -->
+      <script>
+        (function () {
+          var h = window.location.hash;
+          if (/^#(invite_token|recovery_token|confirmation_token|email_change_token|access_token)=/.test(h) &&
+              window.location.pathname.indexOf("/admin") !== 0) {
+            window.location.replace("/admin/" + h);
+          }
+        })();
+      </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>OMZ Abogados | Estudio de abogados en Santiago, Chile</title>
       <meta name="description" content="Estudio de abogados boutique en Santiago, Chile. Resolución de disputas de alta complejidad, asesoría tributaria, wealth management y asesoría corporativa." />
